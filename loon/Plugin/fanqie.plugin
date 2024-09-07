@@ -1,4 +1,9 @@
-# https://raw.githubusercontent.com/zqzess/rule_for_quantumultX/master/QuantumultX/rules/FanQieNovel.list
+#!name=番茄小说广告屏蔽01
+#!desc=屏蔽番茄小说底部和章末广告，且不影响金币获取01
+#!openUrl=
+#!author=sunshine
+#!homepage=https://github.com/zhen102853246/rule_for_yangguang
+#!icon=
 [Rule]
 DOMAIN, p6-ad-sign.byteimg.com, reject
 DOMAIN, p9-ad-sign.byteimg.com, reject
@@ -31,7 +36,7 @@ IP-CIDR, 117.92.229.188/32, reject
 IP-CIDR, 101.36.166.16/32, reject
 IP-CIDR, 180.96.2.114/32, reject
 # 番茄小说福利页
-DOMAIN, lf-sourcecdn-tos.bytegecko.com, direct
+DOMAIN, lf-sourcecdn-tos.bytegecko.com, DIRECT
 
 [Rewrite]
 # https://raw.githubusercontent.com/zqzess/rule_for_quantumultX/master/QuantumultX/rewrite/FanQieNovel.qxrewrite
@@ -42,14 +47,14 @@ DOMAIN, lf-sourcecdn-tos.bytegecko.com, direct
 
 # 番茄小说去章末广告
 ^https?:\/\/.+\.pangolin-sdk-toutiao\.com\/api\/ad\/union\/sdk\/(get_ads|stats|settings)\/ reject
-^https?:\/\/.+\.pglstatp-toutiao\.com\/.+\/toutiao\.mp4  reject
+^https?:\/\/.+\.pglstatp-toutiao\.com\/.+\/toutiao\.mp4 reject
 ^https?:\/\/.+\.(pglstatp-toutiao|pstatp)\.com\/(obj|img)\/(ad-app-package|ad)\/.+ reject
-^https?:\/\/.+\.(pglstatp-toutiao|pstatp)\.com\/(obj|img)\/web\.business\.image\/.+  reject
+^https?:\/\/.+\.(pglstatp-toutiao|pstatp)\.com\/(obj|img)\/web\.business\.image\/.+ reject
 ^https?:\/\/.+\.(pglstatp-toutiao|pstatp)\.com\/obj\/ad-pattern\/renderer reject
 ^https?:\/\/gurd\.snssdk\.com\/src\/server\/v3\/package reject
-^https?:\/\/.+\.byteimg.com/tos-cn-i-1yzifmftcy\/(.+)-jpeg\.jpeg  reject
-^https?:\/\/.+\.pstatp\.com\/obj\/mosaic-legacy\/.+\?from\=ad  reject
-^https?:\/\/.+\.pstatp\.com\/bytecom\/resource\/track_log\/src\/.+  reject
+^https?:\/\/.+\.byteimg.com/tos-cn-i-1yzifmftcy\/(.+)-jpeg\.jpeg reject
+^https?:\/\/.+\.pstatp\.com\/obj\/mosaic-legacy\/.+\?from\=ad reject
+^https?:\/\/.+\.pstatp\.com\/bytecom\/resource\/track_log\/src\/.+ reject
 ^https?:\/\/.+\.snssdk\.com\/video\/play\/1\/toutiao\/.+\/mp4 reject
 ^https?:\/\/.+\.snssdk.com\/api\/ad\/.+ reject
 ^http:\/\/.+\.byteimg\.com\/ad-app-package reject
