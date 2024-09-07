@@ -1,9 +1,14 @@
 #!name=番茄小说广告屏蔽01
 #!desc=屏蔽番茄小说底部和章末广告，且不影响金币获取01
-#!openUrl=
+#!openUrl=https://github.com/zhen102853246/rule_for_yangguang
 #!author=sunshine
+#!tag=去广告
 #!homepage=https://github.com/zhen102853246/rule_for_yangguang
 #!icon=
+#!loon_version = 0.0.1
+#!date = 2024-09-07 13:20:34
+
+
 [Rule]
 DOMAIN, p6-ad-sign.byteimg.com, REJECT
 DOMAIN, p9-ad-sign.byteimg.com, REJECT
