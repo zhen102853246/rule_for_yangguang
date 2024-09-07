@@ -1,4 +1,5 @@
 # https://raw.githubusercontent.com/zqzess/rule_for_quantumultX/master/QuantumultX/rules/FanQieNovel.list
+[Rule]
 host, p6-ad-sign.byteimg.com, reject
 host, p9-ad-sign.byteimg.com, reject
 host, i.snssdk.com, reject
@@ -31,6 +32,7 @@ ip-cidr, 180.96.2.114/32, reject
 # 番茄小说福利页
 host, lf-sourcecdn-tos.bytegecko.com, direct
 
+[Rewrite]
 # https://raw.githubusercontent.com/zqzess/rule_for_quantumultX/master/QuantumultX/rewrite/FanQieNovel.qxrewrite
 # 番茄小说，version = 3.0
 #DOMAIN,i.snssdk.com,REJECT
@@ -58,5 +60,5 @@ host, lf-sourcecdn-tos.bytegecko.com, direct
 ^https?:\/\/.+novelapp\.fqnovelvod\.com\/.+\/video\/.+ url reject
 # ^http:\/\/.+\.douyincdn\.com\/stage\/.+\.flv url reject
 
-
+[MitM]
 hostname = *.pangolin-sdk-toutiao,*.pangolin-sdk-toutiao.*,*.pstatp.com,*.pstatp.com.*,*.pglstatp-toutiao.com.*,*.pglstatp-toutiao.com,gurd.snssdk.com,gurd.snssdk.com.*,*default.ixigua.com,adim.pinduoduo.com,v6-novelapp.fqnovelvod.com
