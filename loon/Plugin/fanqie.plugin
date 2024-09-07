@@ -46,25 +46,25 @@ DOMAIN, lf-sourcecdn-tos.bytegecko.com, DIRECT
 #DOMAIN,dig.bdurl.net,REJECT
 
 # 番茄小说去章末广告
-^https?:\/\/.+\.pangolin-sdk-toutiao\.com\/api\/ad\/union\/sdk\/(get_ads|stats|settings)\/ REJECT
-^https?:\/\/.+\.pglstatp-toutiao\.com\/.+\/toutiao\.mp4 REJECT
-^https?:\/\/.+\.(pglstatp-toutiao|pstatp)\.com\/(obj|img)\/(ad-app-package|ad)\/.+ REJECT
-^https?:\/\/.+\.(pglstatp-toutiao|pstatp)\.com\/(obj|img)\/web\.business\.image\/.+ REJECT
-^https?:\/\/.+\.(pglstatp-toutiao|pstatp)\.com\/obj\/ad-pattern\/renderer REJECT
-^https?:\/\/gurd\.snssdk\.com\/src\/server\/v3\/package REJECT
-^https?:\/\/.+\.byteimg.com/tos-cn-i-1yzifmftcy\/(.+)-jpeg\.jpeg REJECT
-^https?:\/\/.+\.pstatp\.com\/obj\/mosaic-legacy\/.+\?from\=ad REJECT
-^https?:\/\/.+\.pstatp\.com\/bytecom\/resource\/track_log\/src\/.+ REJECT
-^https?:\/\/.+\.snssdk\.com\/video\/play\/1\/toutiao\/.+\/mp4 REJECT
-^https?:\/\/.+\.snssdk.com\/api\/ad\/.+ REJECT
-^http:\/\/.+\.byteimg\.com\/ad-app-package REJECT
-^http:\/\/.+\.byteimg\.com\/web\.business\.image REJECT
-# .+web\.business\.image REJECT
+^https?:\/\/.+\.pangolin-sdk-toutiao\.com\/api\/ad\/union\/sdk\/(get_ads|stats|settings)\/ reject
+^https?:\/\/.+\.pglstatp-toutiao\.com\/.+\/toutiao\.mp4 reject
+^https?:\/\/.+\.(pglstatp-toutiao|pstatp)\.com\/(obj|img)\/(ad-app-package|ad)\/.+ reject
+^https?:\/\/.+\.(pglstatp-toutiao|pstatp)\.com\/(obj|img)\/web\.business\.image\/.+ reject
+^https?:\/\/.+\.(pglstatp-toutiao|pstatp)\.com\/obj\/ad-pattern\/renderer reject
+^https?:\/\/gurd\.snssdk\.com\/src\/server\/v3\/package reject
+^https?:\/\/.+\.byteimg.com/tos-cn-i-1yzifmftcy\/(.+)-jpeg\.jpeg reject
+^https?:\/\/.+\.pstatp\.com\/obj\/mosaic-legacy\/.+\?from\=ad reject
+^https?:\/\/.+\.pstatp\.com\/bytecom\/resource\/track_log\/src\/.+ reject
+^https?:\/\/.+\.snssdk\.com\/video\/play\/1\/toutiao\/.+\/mp4 reject
+^https?:\/\/.+\.snssdk.com\/api\/ad\/.+ reject
+^http:\/\/.+\.byteimg\.com\/ad-app-package reject
+^http:\/\/.+\.byteimg\.com\/web\.business\.image reject
+# .+web\.business\.image reject
 
-^https?:\/\/.+\.(pglstatp-toutiao|pstatp)\.com\/(ad-app-package|ad)\/.+ REJECT
-^https?:\/\/adim\.pinduoduo\.com\/.+\/toutiao\?.+ REJECT
-^https?:\/\/.+novelapp\.fqnovelvod\.com\/.+\/video\/.+ REJECT
-# ^http:\/\/.+\.douyincdn\.com\/stage\/.+\.flv REJECT
+^https?:\/\/.+\.(pglstatp-toutiao|pstatp)\.com\/(ad-app-package|ad)\/.+ reject
+^https?:\/\/adim\.pinduoduo\.com\/.+\/toutiao\?.+ reject
+^https?:\/\/.+novelapp\.fqnovelvod\.com\/.+\/video\/.+ reject
+# ^http:\/\/.+\.douyincdn\.com\/stage\/.+\.flv reject
 
 [MitM]
 hostname = *.pangolin-sdk-toutiao,*.pangolin-sdk-toutiao.*,*.pstatp.com,*.pstatp.com.*,*.pglstatp-toutiao.com.*,*.pglstatp-toutiao.com,gurd.snssdk.com,gurd.snssdk.com.*,*default.ixigua.com,adim.pinduoduo.com,v6-novelapp.fqnovelvod.com
